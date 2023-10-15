@@ -18,7 +18,7 @@ async function fetchCatImages(page) {
 
 // Function to fetch cat images from all pages
 async function fetchAllCatImages() {
-    const totalPages = 30; // You can adjust the number of pages as needed
+    const totalPages = 5; // You can adjust the number of pages as needed
     for (let page = 1; page <= totalPages; page++) {
         const images = await fetchCatImages(page);
         catImages = catImages.concat(images);
